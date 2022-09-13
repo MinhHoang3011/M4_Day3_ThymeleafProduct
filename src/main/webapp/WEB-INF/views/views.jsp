@@ -1,0 +1,40 @@
+<%--
+  Created by IntelliJ IDEA.
+  User: Admin
+  Date: 13/09/2022
+  Time: 9:37 AM
+  To change this template use File | Settings | File Templates.
+--%>
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>View Customer</h3>
+<p>
+    <a th:href="@{/customer}">
+        Back to customer list
+    </a>
+</p>
+<div id="detail">
+    <div class="motordetail">
+        <label>Name:</label>
+        <label th:text="${motor.name}"></label>
+    </div>
+    <div class="motordetail">
+        <label>Price:</label>
+        <label th:text="${motor.price}"></label>
+    </div>
+    <div class="motordetail">
+        <label>Color:</label>
+        <label th:text="${motor.color}"></label>
+    </div>
+    <div class="motordetail">
+        <label>Manufacturer:</label>
+        <label th:text="${motor.manufacturer}"></label>
+    </div>
+</div>
+</body>
+</html>
